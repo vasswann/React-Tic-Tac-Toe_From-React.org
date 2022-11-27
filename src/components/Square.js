@@ -1,7 +1,10 @@
-const Square = (props) => {
+const Square = ({ value, onClick, winningSquare }) => {
   return (
-    <button className='square' onClick={props.onClick}>
-      {props.value}
+    <button
+      className={'square ' + (winningSquare ? 'square-win' : null)}
+      onClick={onClick}
+    >
+      {value}
     </button>
   );
 };

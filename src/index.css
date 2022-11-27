@@ -10,10 +10,13 @@ body {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   width: 100%j;
   margin: 0;
   text-align: center;
+  color: white;
+  background-color: black;
+  box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .game-info_status {
@@ -33,7 +36,7 @@ h1 {
 
 .square {
   background: #fff;
-  border: 2px solid darkred;
+  border: 2px solid black;
   float: left;
   font-size: 40px;
   font-weight: bold;
@@ -44,6 +47,7 @@ h1 {
   padding: 0;
   text-align: center;
   width: 100px;
+  color: black;
 }
 
 .square:focus {
@@ -51,6 +55,10 @@ h1 {
 }
 .square:hover {
   background-color: #fcfcfcc5;
+}
+.square-win {
+  color: rgb(179, 8, 8);
+  background-color: rgb(241, 231, 231);
 }
 
 .kbd-navigation .square:focus {
@@ -63,6 +71,7 @@ h1 {
   justify-content: center;
   padding: 2rem;
   background-color: lightskyblue;
+  background-color: rgb(255, 230, 9);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   min-height: 29rem;
 }
@@ -72,9 +81,15 @@ h1 {
   font-size: 1.5rem;
 }
 
+.game-info_status {
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
 .history-button {
   appearance: none;
   background-color: #2ea44f;
+  background-color: black;
   border: 1px solid rgba(27, 31, 35, 0.15);
   border-radius: 6px;
   box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
@@ -83,7 +98,7 @@ h1 {
   cursor: pointer;
   display: inline-block;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 300;
   line-height: 20px;
   padding: 6px 16px;
   position: relative;
@@ -103,15 +118,18 @@ h1 {
 
 .history-button:hover {
   background-color: #2c974b;
+  background-color: rgb(24, 24, 24);
 }
 
 .history-button:focus {
   box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
+  box-shadow: rgba(0, 0, 0, 1) 0 0 0 3px;
   outline: none;
 }
 
 .history-button:disabled {
   background-color: #94d3a2;
+  background-color: black;
   border-color: rgba(27, 31, 35, 0.1);
   color: rgba(255, 255, 255, 0.8);
   cursor: default;
@@ -119,5 +137,11 @@ h1 {
 
 .history-button:active {
   background-color: #298e46;
+  background-color: black;
   box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
+}
+
+.toggle {
+  height: 2.2rem;
+  margin-left: 1.5rem;
 }
